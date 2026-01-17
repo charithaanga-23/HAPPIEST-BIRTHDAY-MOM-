@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mommy! 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #ff85a2;
+            --soft-pink: #fce4ec;
+            --deep-rose: #d81b60;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f7;
+            color: var(--text-color);
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
+                        url('https://images.unsplash.com/photo-1527489377706-5bf97e608852?auto=format&fit=crop&q=80'); /* Floral Background */
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: var(--deep-rose);
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* Memories Gallery */
+        .gallery {
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .memory-card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .memory-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .memory-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            background-color: #eee; /* Placeholder color */
+        }
+
+        .memory-card p {
+            margin-top: 15px;
+            font-style: italic;
+            color: var(--deep-rose);
+        }
+
+        /* Message Section */
+        .message-section {
+            background-color: white;
+            padding: 80px 20px;
+            margin: 40px 0;
+        }
+
+        .message-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* Floating Hearts Animation */
+        .heart {
+            color: var(--primary-pink);
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            padding: 40px;
+            background: var(--soft-pink);
+            font-weight: 600;
+        }
+
+        /* Button to start celebration */
+        .btn {
+            background: var(--deep-rose);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Happy Birthday, Mommy! 💕</h1>
+        <p class="subtitle">Today is all about celebrating you and the joy you bring into our lives every single day.</p>
+        <a href="#gallery" class="btn">View Our Memories 🎉</a>
+    </header>
+
+    <section id="gallery" class="gallery">
+        <div class="memory-card">
+            <img src="mom1.jpeg" alt="Mom 1">
+            <p>You’re my best friend 🤍</p>
+        </div>
+        <div class="memory-card">
+            <img src="mom2.jpeg" alt="Mom 2">
+            <p>With you, everything feels right 🤍</p>
+        </div>
+        <div class="memory-card">
+            <img src="mom3.jpeg" alt="Mom 3">
+            <p>You’re the reason my days smile 🤍</p>
+        </div>
+        <div class="memory-card">
+            <img src="mom4.jpeg" alt="Mom 4">
+            <p>The one we will always love 🤍</p>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="message-content">
+            <h2>A Special Message for You</h2>
+            <p>Happy Birthday to the most beautiful mom. You make our world brighter just by being in it. Every smile of yours feels like a gift meant just for us.</p>
+            <p>Thank you for loving us, supporting us, and understanding us. With you, every moment becomes special and meaningful.</p>
+            <p><strong>We wish you endless happiness and peace today and always. We are grateful every day that we get to call you MOMMY!!</strong></p>
+            <div class="heart" style="font-size: 2rem;">💖 💕 💗</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created with Love for Mommy 🌸</p>
+    </footer>
+
+</body>
+</html>
